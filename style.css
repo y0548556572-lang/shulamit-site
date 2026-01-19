@@ -1,0 +1,40 @@
+html { scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: #fdfaf7; direction: rtl; color: #4a4a4a; }
+
+.container { width: 85%; margin: auto; max-width: 1100px; }
+
+header { background: #fff; padding: 10px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 1000; }
+header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 22px; font-weight: bold; color: #8d5b4c; }
+
+nav ul { list-style: none; display: flex; gap: 20px; margin: 0; }
+nav a { text-decoration: none; color: #666; font-weight: 500; transition: 0.3s; }
+nav a:hover { color: #d4af37; }
+
+.hero { 
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1350'); 
+    background-size: cover; background-position: center; height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.hero-content h1 { font-size: 3.5rem; color: #5a3e36; margin-bottom: 20px; }
+.hero-content p { font-size: 1.4rem; max-width: 700px; margin: 0 auto 30px; color: #4a4a4a; }
+
+.btn-primary { background: #8d5b4c; color: #fff; padding: 15px 40px; border: none; border-radius: 50px; cursor: pointer; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(141, 91, 76, 0.3); transition: 0.3s; }
+.btn-primary:hover { background: #5a3e36; transform: translateY(-2px); }
+
+.experience-section { padding: 80px 0; background: #fff; text-align: center; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+.card { padding: 30px; border-radius: 20px; background: #fdfaf7; transition: 0.3s; border: 1px solid transparent; }
+.card:hover { border-color: #d4af37; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.icon { font-size: 2.5rem; margin-bottom: 15px; }
+
+.recipe-section { padding: 80px 0; background: #f4ece6; }
+.recipe-box { max-width: 800px; margin: auto; text-align: center; }
+.recipe-list { list-style: none; padding: 0; display: inline-block; text-align: right; margin-top: 20px; }
+.recipe-list li { margin-bottom: 10px; font-size: 1.1rem; }
+
+.contact-section { padding: 100px 0; text-align: center; }
+.contact-card { background: #fff; padding: 50px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); display: inline-block; max-width: 600px; }
+.info { margin: 30px 0; font-size: 1.2rem; }
+.btn-gold { background: #d4af37; color: #fff; padding: 12px 30px; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; }
+
+footer { padding: 30px; background: #5a3e36; color: #fff; text-align: center; font-size: 0.9rem; }
