@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.card');
+    const elementsToAnimate = document.querySelectorAll('.card, .segulot-list li, .video-card, .review-card');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1 });
 
-    cards.forEach(card => {
-        card.style.opacity = 0;
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'all 0.6s ease-out';
-        observer.observe(card);
+    elementsToAnimate.forEach(element => {
+        element.style.opacity = 0;
+        element.style.transform = 'translateY(40px)';
+        element.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+        observer.observe(element);
     });
 });

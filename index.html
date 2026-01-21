@@ -3,60 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>הרבנית שולמית סיידה | הפרשת חלה, ישועות ושמחה</title>
+    <title>הרבנית שולמית סיידה | הפרשת חלה, סרטונים וישועות</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Heebo:wght@300;500;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <div class="logo">הרבנית שולמית סיידה | חוויה של קדושה ושמחה</div>
+        <div class="container header-flex">
+            <div class="logo">הרבנית שולמית סיידה</div>
             <nav>
                 <ul>
-                    <li><a href="#production">הפקה ועיצוב</a></li>
-                    <li><a href="#segulot">10 הסגולות</a></li>
-                    <li><a href="#reviews">המלצות</a></li>
-                    <li><a href="#contact">להזמנות</a></li>
+                    <li><a href="#production">הפקה</a></li>
+                    <li><a href="#videos">סרטונים</a></li>
+                    <li><a href="#segulot">סגולות</a></li>
+                    <li><a href="#comments">תגובות</a></li>
+                    <li><a href="#contact" class="nav-cta">להזמנות</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>בואי לפתוח שערי שמיים</h1>
-            <p>ערב של התרוממות רוח, ישועות, שמחה ודמעות של התרגשות.<br>
-            לכל שכבות האוכלוסיה: חילוני, דתי ומסורתי – כולן אצלי בנות מלך.</p>
-            <button class="btn-primary" onclick="location.href='#contact'">הזמיני ערב מרגש בוואטסאפ</button>
+            <p>חוויה מלכותית של קדושה, ישועות ושמחה יהודית בערב בלתי נשכח.</p>
+            <button class="btn-primary" onclick="location.href='#contact'">הזמיני ערב מרגש</button>
         </div>
     </section>
 
-    <section id="production" class="experience-section">
+    <section id="videos" class="section-padding">
         <div class="container">
-            <h2>חבילת ההפקה המושלמת לערב בלתי נשכח</h2>
-            <p class="subtitle">אני מגיעה עם ציוד מלא, הגברה, תלבושות ואווירה – את רק צריכה להביא את הלב.</p>
-            
+            <h2 class="section-title">רגעים של קדושה ושמחה</h2>
+            <p class="subtitle">צפי בטעימה מהאווירה המיוחדת בערבי הפרשת החלה</p>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VideoID1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>פתיחת שערי שמיים</h3>
+                </div>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VideoID2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>שמחה וריקודים</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="production" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">הפקה מלכותית</h2>
             <div class="grid">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=500&q=80" alt="אווירה מלכותית של נרות ופרחים" class="card-img">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=500&q=80" alt="עיצוב אירוע" class="card-img">
+                    </div>
                     <span class="material-icons-round icon">auto_awesome</span>
-                    <h3>כניסה מלכותית ומרגשת</h3>
-                    <p>נתחיל באנרגיות גבוהות של קדושה: שטיח אדום חגיגי לכלת האירוע, קשתות מעוצבות, ושופרות לפתיחת שערי הלב והשמיים ברגע השיא.</p>
+                    <h3>עיצוב ומלכותיות</h3>
+                    <p>שטיח אדום חגיגי, שופרות ואווירה יוקרתית שפותחת את שערי הלב.</p>
                 </div>
-
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1590845947698-8924d7409b56?w=500&q=80" alt="בדים מסורתיים צבעוניים" class="card-img">
+                    <div class="card-img-wrapper">
+                        <img src="dresses.png" alt="תלבושות מסורתיות" class="card-img">
+                    </div>
                     <span class="material-icons-round icon">checkroom</span>
-                    <h3>תלבושות לחינה וריקודים</h3>
-                    <p>כל הצבע והיופי של המסורת: מגוון תלבושות אותנטיות, צעיפים, מטפחות ואביזרים לכל המשתתפות שהופכים את הריקודים לחוויה מגבשת.</p>
+                    <h3>תלבושות מסורתיות</h3>
+                    <p>מגוון בגדים יהודיים אותנטיים ומפוארים לכל המשתתפות.</p>
                 </div>
-
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=500&q=80" alt="תופים וכלי קצב" class="card-img">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=500&q=80" alt="אווירת שמחה" class="card-img">
+                    </div>
                     <span class="material-icons-round icon">music_note</span>
-                    <h3>דרבוקה, צחוק ושמחה</h3>
-                    <p>שילוב מיוחד בין כוח הדיבור לכוח הנגינה. ליווי בדרבוקה להרמת הקצב, ואפשרות ל"סדנת צחוק" משחררת ששוברת את הקרח.</p>
+                    <h3>שמחה יהודית</h3>
+                    <p>ליווי בדרבוקה וריקודים המאחדים ומחברים את כל הבנות למלך.</p>
                 </div>
             </div>
         </div>
@@ -64,72 +89,58 @@
 
     <section id="segulot" class="segulot-section">
         <div class="container segulot-layout">
-            
             <div class="segulot-content">
-                <h2>10 סגולות של מצוות הפרשת חלה</h2>
-                <p class="segulot-intro">למה כדאי לעשות הפרשת חלה? עת רצון עצומה לפתיחת שערי שמיים:</p>
-                
+                <h2>עשר סגולות הפרשת החלה</h2>
                 <ul class="segulot-list">
-                    <li>🕊️ <strong>שלום בית:</strong> קדושת החלה מושכת אהבה ואחדות.</li>
-                    <li>💰 <strong>פרנסה:</strong> "בזכות החלה העיסה מתברכת".</li>
-                    <li>💍 <strong>זיווגים:</strong> סגולה לבניין בית נאמן בישראל.</li>
-                    <li>💊 <strong>בריאות:</strong> מצווה שנעשית בשמחה מביאה רפואה.</li>
-                    <li>👶 <strong>נחת מהילדים:</strong> זרע של קיימא וחינוך.</li>
-                    <li>🛡️ <strong>שמירה והגנה:</strong> שומרת על הבית מפגעים.</li>
+                    <li>🕊️ <strong>פרנסה וכלכלה:</strong> ברכה והצלחה במעשה הידיים.</li>
+                    <li>🏡 <strong>שלום בית:</strong> השראת הרמוניה ואחדות במשפחה.</li>
+                    <li>💍 <strong>זיווגים הגונים:</strong> עת רצון לבניין עדי עד.</li>
+                    <li>💊 <strong>בריאות איתנה:</strong> סגולה לרפואה וחיזוק הגוף והנפש.</li>
+                    <li>👶 <strong>ברכה בפרי בטן:</strong> תפילה לישועה ולזרע של קיימא.</li>
+                    <li>📚 <strong>חינוך הצאצאים:</strong> הצלחה בגידול בנים ובנות בדרך התורה.</li>
+                    <li>🛡️ <strong>הגנה ושמירה:</strong> שמירה על הבית ויושביו מכל רע.</li>
+                    <li>✨ <strong>שערי רחמים:</strong> פתיחת שערי שמיים לבקשות אישיות.</li>
+                    <li>📖 <strong>זיכוך הנפש:</strong> התעלות רוחנית וחיבור לבורא עולם.</li>
+                    <li>🍞 <strong>ברכה בעיסה:</strong> שפע רוחני ופיזי השורה בכל הבית.</li>
                 </ul>
-                <p style="margin-top: 20px; font-weight: bold; color: #b08d55;">ועוד סגולות רבות ללידה קלה, הסרת דינים וישועה בעת צרה.</p>
             </div>
-
             <div class="segulot-image-container">
-                <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=800&q=80" alt="חלות לשבת קודש על שולחן" class="challah-big-img">
+                <img src="dough.png" alt="מצוות הפרשת חלה" class="challah-big-img">
             </div>
-
         </div>
     </section>
 
-    <section id="reviews" class="experience-section" style="background-color: #fff;">
+    <section id="comments" class="section-padding bg-light">
         <div class="container">
-            <h2>נשים מספרות</h2>
-            <div class="grid">
-                <div class="card review-card">
-                    <p>"הייתי מרוצה ממך תמיד! בהפרשות חלה הבאות רק אותך אני אזמין בעזרת השם."</p>
-                </div>
-                <div class="card review-card">
-                    <p>"תודה רבה לך אלופה, עשית לנו ערב מרגש ויפה. אני הכי מרוצה בעולם, אין עלייך!"</p>
-                </div>
-                <div class="card review-card">
-                    <p>"היה ערב מאוד יפה ומרגש מאוד. תודה רבה על הכל."</p>
-                </div>
+            <h2 class="section-title">תגובות והמלצות מהלב</h2>
+            <p class="subtitle">מוזמנות לשתף את החוויות שלכן מהערב</p>
+            
+            <div id="cusdis_thread"
+              data-host="https://cusdis.com"
+              data-app-id="08cef773-aa62-411c-8d31-97dbcd08408e" 
+              data-page-id="shulamit_site_main"
+              data-page-url="https://www.shulamit-seida.co.il"
+              data-page-title="תגובות הרבנית שולמית">
             </div>
+            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
         </div>
     </section>
 
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="contact-card">
-                <h2>בואי נפתח יחד שערי שמיים</h2>
-                <p>מתאים לערבי כלה, בת מצווה, ימי הולדת, ערבי ישועה וגיבוש.</p>
-                
-                <div class="gemach-note">
-                    <p>💝 <strong>פעילות לשם שמיים:</strong></p>
-                    <p>עבור כלות יתומות ומעוטי יכולת - הפעילות ניתנת <strong>בחינם לגמרי</strong> באהבה גמורה.</p>
-                    <p style="font-size: 0.9rem;">(לשאר האירועים: מחיר סמלי לכיסוי הוצאות בלבד)</p>
-                </div>
-
-                <div class="info">
-                    <p>📞 <strong>לפרטים והזמנת תאריך:</strong> 053-3731916</p>
-                </div>
+                <h2>להזמנת אירוע ופרטים נוספים</h2>
+                <p class="phone-num">053-3731916</p>
                 <div class="action-buttons">
-                    <button class="btn-primary" onclick="window.location.href='https://wa.me/972533731916'">שלחי הודעה לרבנית בוואטסאפ</button>
-                    <br><br>
-                    <button class="btn-gold" onclick="window.location.href='tel:0533731916'">חייגי עכשיו</button>
+                    <button class="btn-primary" onclick="window.location.href='https://wa.me/972533731916'">הזמנה בוואטסאפ</button>
+                    <button class="btn-gold" onclick="window.location.href='tel:0533731916'">חיוג מהיר</button>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>נבנה באהבה &copy; 2026</p>
+        <p>נבנה עבור הרבנית שולמית סיידה &copy; 2026</p>
     </footer>
 
     <script src="script.js"></script>
